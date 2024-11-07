@@ -38,6 +38,30 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
    ```bash
    git clone https://github.com/yourusername/library-api.git
 
+## Endpoints
+
+### User Endpoints
+**Register a New User**
+- URL: /user/register
+- Method: POST
+- Description: Registers a new user with username and password
+- Request Body:
+   ```bash
+   {
+  "username": "rob",
+  "password": "password123"
+   }
+- Response:
+   ```bash
+   {
+  "status": "success",
+  "message": "User registered successfully"
+   }
+
+
+
+
+
 
 
 
