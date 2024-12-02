@@ -13,7 +13,7 @@ This repository hosts a comprehensive API designed to support a library manageme
   - [Book Endpoints](#book-endpoints)
 - [Token Management](#token-management)
 - [Database Structure](#database-structure)
-- [Contributing](#contributing)
+- [Owner](#owner)
 
 ---
 
@@ -348,6 +348,10 @@ The following tables define the database schema for the Library API.
 - **Books** table contains details of books, with `author_id` linking to the `Authors` table.
 - **JWT Tokens** table tracks issued tokens to manage authentication and ensure token uniqueness.
 
+## Owner
+- **Robin Justin B. Catbagan**  
+  *Student, BS Information Technology IV*
+  **Contact** [rcatbagan20622@student.dmmmsu.edu.ph]
 
 
 
