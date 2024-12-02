@@ -38,6 +38,8 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
    ```bash
    git clone https://github.com/yourusername/library-api.git
 
+
+
 ## Endpoints
 
 ### User Endpoints
@@ -278,6 +280,8 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
   "message": "Book deleted successfully"
    }
 
+
+
 ## Token Management
 **Token Generation**  
 Tokens are generated using the **HS256** algorithm and are valid for **1 hour**. The `generateAccessToken()` function creates the payload and signs it with a secret key.
@@ -296,6 +300,8 @@ The API validates incoming tokens using a middleware function (validateToken). T
 
 **Token Storage**
 Tokens are stored in the jwt_tokens table. After use, they are marked as "used" to prevent reuse.
+
+
 
 ## Database Structure
 The following tables define the database schema for the Library API.
@@ -347,6 +353,8 @@ The following tables define the database schema for the Library API.
 - **Authors** table maintains information about authors available in the library.
 - **Books** table contains details of books, with `author_id` linking to the `Authors` table.
 - **JWT Tokens** table tracks issued tokens to manage authentication and ensure token uniqueness.
+
+
 
 ## Owner
 - **Robin Justin B. Catbagan**  
