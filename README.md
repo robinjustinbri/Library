@@ -150,7 +150,7 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
    ```bash
    {
   "id": "1",
-"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NTk4OTIsImV4cCI6MTczMDk2MzQ5Mn0.Ef4pn5tHsjjGjJejDB8QQOzRZeT4UpipLTdI3pz13oE"
+   "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NTk4OTIsImV4cCI6MTczMDk2MzQ5Mn0.Ef4pn5tHsjjGjJejDB8QQOzRZeT4UpipLTdI3pz13oE"
 }
 - **Response**:
    ```bash
