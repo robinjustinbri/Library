@@ -278,21 +278,75 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
   "message": "Book deleted successfully"
    }
 
+## Token Management
+**Token Generation**
+Tokens are generated using the **HS256** algorithm and are valid for **1 hour**. The generateAccessToken() function creates the payload and signs it with a secret key.
 
+**Token Payload Structure**
+```bash
+{
+  "iss": "http://library.org",
+  "aud": "http://library.com",
+  "iat": "<issued_at_timestamp>",
+  "exp": "<expiration_timestamp>"
+}
 
+**Token Validation**
+The API validates incoming tokens using a middleware function (validateToken). Tokens are checked for expiration and usage status.
 
+**Token Storage**
+Tokens are stored in the jwt_tokens table. After use, they are marked as "used" to prevent reuse.
 
+## Database Structure
+The following tables define the database schema for the Library API.
 
+---
 
+## Users Table
 
+| Column     | Data Type    | Constraints               | Description             |
+|------------|--------------|----------------------------|-------------------------|
+| `id`       | INT          | PRIMARY KEY, AUTO_INCREMENT | Unique user ID          |
+| `username` | VARCHAR(255) | NOT NULL, UNIQUE           | Username of the user    |
+| `password` | VARCHAR(255) | NOT NULL                   | Hashed user password    |
 
+---
 
+## Authors Table
 
+| Column      | Data Type    | Constraints               | Description             |
+|-------------|--------------|----------------------------|-------------------------|
+| `authorid`  | INT          | PRIMARY KEY, AUTO_INCREMENT | Unique author ID        |
+| `name`      | VARCHAR(255) | NOT NULL                   | Name of the author      |
 
+---
 
+## Books Table
 
+| Column      | Data Type    | Constraints               | Description             |
+|-------------|--------------|----------------------------|-------------------------|
+| `bookid`    | INT          | PRIMARY KEY, AUTO_INCREMENT | Unique book ID          |
+| `title`     | VARCHAR(255) | NOT NULL                   | Title of the book       |
+| `author_id` | INT          | FOREIGN KEY (authors)      | Linked author ID        |
 
+---
 
+## JWT Tokens Table
+
+| Column       | Data Type    | Constraints               | Description               |
+|--------------|--------------|----------------------------|---------------------------|
+| `token`      | TEXT         | PRIMARY KEY                | The JWT token string      |
+| `used`       | TINYINT(1)   | DEFAULT 0                  | 0 = Unused, 1 = Used      |
+| `created_at` | TIMESTAMP    | DEFAULT CURRENT_TIMESTAMP  | Token creation timestamp  |
+
+---
+
+## Relationships
+
+- **Users** table stores authentication details for each user.
+- **Authors** table maintains information about authors available in the library.
+- **Books** table contains details of books, with `author_id` linking to the `Authors` table.
+- **JWT Tokens** table tracks issued tokens to manage authentication and ensure token uniqueness.
 
 
 
