@@ -560,15 +560,712 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
 - Request Body:
    ```bash
    {
-  "username": "rob",
-  "password": "password123"
-   }
+"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAwMzAsImV4cCI6MTczMDk2MzYzMH0.Ma3BxUr6VCmegrFKUYX00fYYU3upHBD10dYMNvA9kF8"
+}
 - Response:
    ```bash
    {
   "status": "success",
-  "message": "User registered successfully"
-   }
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAxNDQsImV4cCI6MTczMDk2Mzc0NH0.1Frf64b24XKl-WFx3Bf7rh1HzbH_csGgarESyEaEBqI",
+  "data": [
+    {
+      "bookid": 1,
+      "title": "thisisabook",
+      "authorid": 23,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 2,
+      "title": "Book Title 2",
+      "authorid": 2,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 3,
+      "title": "Book Title 3",
+      "authorid": 3,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 4,
+      "title": "Book Title 4",
+      "authorid": 4,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 5,
+      "title": "hakdog",
+      "authorid": 65,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 6,
+      "title": "Book Title 6",
+      "authorid": 6,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 7,
+      "title": "Book Title 7",
+      "authorid": 7,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 8,
+      "title": "Book Title 8",
+      "authorid": 8,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 9,
+      "title": "Book Title 9",
+      "authorid": 9,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 10,
+      "title": "Book Title 10",
+      "authorid": 10,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 11,
+      "title": "Book Title 11",
+      "authorid": 11,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 12,
+      "title": "Book Title 12",
+      "authorid": 12,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 13,
+      "title": "Book Title 13",
+      "authorid": 13,
+      "is_borrowed": 1
+    },
+    {
+      "bookid": 14,
+      "title": "Book Title 14",
+      "authorid": 14,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 15,
+      "title": "Book Title 15",
+      "authorid": 15,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 16,
+      "title": "Book Title 16",
+      "authorid": 16,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 17,
+      "title": "Book Title 17",
+      "authorid": 17,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 18,
+      "title": "Book Title 18",
+      "authorid": 18,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 19,
+      "title": "Book Title 19",
+      "authorid": 19,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 20,
+      "title": "Book Title 20",
+      "authorid": 20,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 21,
+      "title": "Book Title 21",
+      "authorid": 21,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 22,
+      "title": "Book Title 22",
+      "authorid": 22,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 23,
+      "title": "Book Title 23",
+      "authorid": 23,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 24,
+      "title": "Book Title 24",
+      "authorid": 24,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 25,
+      "title": "Book Title 25",
+      "authorid": 25,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 26,
+      "title": "Book Title 26",
+      "authorid": 26,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 27,
+      "title": "Book Title 27",
+      "authorid": 27,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 28,
+      "title": "Book Title 28",
+      "authorid": 28,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 29,
+      "title": "Book Title 29",
+      "authorid": 29,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 30,
+      "title": "Book Title 30",
+      "authorid": 30,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 31,
+      "title": "Book Title 31",
+      "authorid": 31,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 32,
+      "title": "Book Title 32",
+      "authorid": 32,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 33,
+      "title": "Book Title 33",
+      "authorid": 33,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 34,
+      "title": "Book Title 34",
+      "authorid": 34,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 35,
+      "title": "Book Title 35",
+      "authorid": 35,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 36,
+      "title": "Book Title 36",
+      "authorid": 36,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 37,
+      "title": "Book Title 37",
+      "authorid": 37,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 38,
+      "title": "Book Title 38",
+      "authorid": 38,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 39,
+      "title": "Book Title 39",
+      "authorid": 39,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 40,
+      "title": "Book Title 40",
+      "authorid": 40,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 41,
+      "title": "Book Title 41",
+      "authorid": 41,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 42,
+      "title": "Book Title 42",
+      "authorid": 42,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 43,
+      "title": "Book Title 43",
+      "authorid": 43,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 44,
+      "title": "Book Title 44",
+      "authorid": 44,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 45,
+      "title": "Book Title 45",
+      "authorid": 45,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 46,
+      "title": "Book Title 46",
+      "authorid": 46,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 47,
+      "title": "Book Title 47",
+      "authorid": 47,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 48,
+      "title": "Book Title 48",
+      "authorid": 48,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 49,
+      "title": "Book Title 49",
+      "authorid": 49,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 50,
+      "title": "Book Title 50",
+      "authorid": 50,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 51,
+      "title": "Book Title 51",
+      "authorid": 51,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 52,
+      "title": "Book Title 52",
+      "authorid": 52,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 53,
+      "title": "Book Title 53",
+      "authorid": 53,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 54,
+      "title": "Book Title 54",
+      "authorid": 54,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 55,
+      "title": "Book Title 55",
+      "authorid": 55,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 56,
+      "title": "Book Title 56",
+      "authorid": 56,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 57,
+      "title": "Book Title 57",
+      "authorid": 57,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 58,
+      "title": "Book Title 58",
+      "authorid": 58,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 59,
+      "title": "Book Title 59",
+      "authorid": 59,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 60,
+      "title": "Book Title 60",
+      "authorid": 60,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 61,
+      "title": "Book Title 61",
+      "authorid": 61,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 62,
+      "title": "Book Title 62",
+      "authorid": 62,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 63,
+      "title": "Book Title 63",
+      "authorid": 63,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 64,
+      "title": "Book Title 64",
+      "authorid": 64,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 65,
+      "title": "Book Title 65",
+      "authorid": 65,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 66,
+      "title": "Book Title 66",
+      "authorid": 66,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 67,
+      "title": "Book Title 67",
+      "authorid": 67,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 68,
+      "title": "Book Title 68",
+      "authorid": 68,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 69,
+      "title": "Book Title 69",
+      "authorid": 69,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 70,
+      "title": "Book Title 70",
+      "authorid": 70,
+      "is_borrowed": 1
+    },
+    {
+      "bookid": 71,
+      "title": "Book Title 71",
+      "authorid": 71,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 72,
+      "title": "Book Title 72",
+      "authorid": 72,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 73,
+      "title": "Book Title 73",
+      "authorid": 73,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 74,
+      "title": "Book Title 74",
+      "authorid": 74,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 75,
+      "title": "Book Title 75",
+      "authorid": 75,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 76,
+      "title": "Book Title 76",
+      "authorid": 76,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 77,
+      "title": "Book Title 77",
+      "authorid": 77,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 78,
+      "title": "Book Title 78",
+      "authorid": 78,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 79,
+      "title": "Book Title 79",
+      "authorid": 79,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 80,
+      "title": "Book Title 80",
+      "authorid": 80,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 81,
+      "title": "Book Title 81",
+      "authorid": 81,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 82,
+      "title": "Book Title 82",
+      "authorid": 82,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 83,
+      "title": "Book Title 83",
+      "authorid": 83,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 84,
+      "title": "Book Title 84",
+      "authorid": 84,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 85,
+      "title": "Book Title 85",
+      "authorid": 85,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 86,
+      "title": "Book Title 86",
+      "authorid": 86,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 87,
+      "title": "Book Title 87",
+      "authorid": 87,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 88,
+      "title": "Book Title 88",
+      "authorid": 88,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 89,
+      "title": "Book Title 89",
+      "authorid": 89,
+      "is_borrowed": 1
+    },
+    {
+      "bookid": 90,
+      "title": "Book Title 90",
+      "authorid": 90,
+      "is_borrowed": 1
+    },
+    {
+      "bookid": 91,
+      "title": "Book Title 91",
+      "authorid": 91,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 92,
+      "title": "Book Title 92",
+      "authorid": 92,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 93,
+      "title": "Book Title 93",
+      "authorid": 93,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 94,
+      "title": "Book Title 94",
+      "authorid": 94,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 95,
+      "title": "Book Title 95",
+      "authorid": 95,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 96,
+      "title": "Book Title 96",
+      "authorid": 96,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 97,
+      "title": "Book Title 97",
+      "authorid": 97,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 98,
+      "title": "Book Title 98",
+      "authorid": 98,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 99,
+      "title": "Book Title 99",
+      "authorid": 99,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 140,
+      "title": "The Great Gatsby",
+      "authorid": 5,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 141,
+      "title": "The Great Gatsby",
+      "authorid": 83,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 144,
+      "title": "book101",
+      "authorid": 99,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 145,
+      "title": "thisisabook",
+      "authorid": 77,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 146,
+      "title": "thisisabook",
+      "authorid": 77,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 147,
+      "title": "thisisabook",
+      "authorid": 77,
+      "is_borrowed": 0
+    },
+    {
+      "bookid": 148,
+      "title": "thebook",
+      "authorid": 5,
+      "is_borrowed": 0
+    }
+  ]
+}
+
+**2. Add a New Book**
+- URL: /books
+- Method: POST
+- Description: Adds a new book to the library.
+- Request Body:
+   ```bash
+   {
+"title": "The Wind",
+  "author_id": "9",
+"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAxNDQsImV4cCI6MTczMDk2Mzc0NH0.1Frf64b24XKl-WFx3Bf7rh1HzbH_csGgarESyEaEBqI"
+}
+- Response:
+   ```bash
+   {
+  "status": "success",
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAyNDUsImV4cCI6MTczMDk2Mzg0NX0.phQVjYcAIJDDTieLlklxxApPZxrZEzo7W5A4zUDcg4Y",
+  "message": "Book added successfully"
+}
+
+**3. Update a Book**
+- URL: /books/update/{id}
+- Method: PUT
+- Description: Updates a book in the library.
+- Request Body:
+   ```bash
+   {
+"id": "8",
+  "title": "Brave",
+"author_id": "7",
+"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAyNDUsImV4cCI6MTczMDk2Mzg0NX0.phQVjYcAIJDDTieLlklxxApPZxrZEzo7W5A4zUDcg4Y"
+}
+- Response:
+   ```bash
+   {
+  "status": "success",
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAzNzcsImV4cCI6MTczMDk2Mzk3N30.NH9OXj3KBStsJtUh_89Cja8-2yHhFHucq0hFUs7TEtM",
+  "message": "Book updated successfully"
+}
+
+**4. Delete a Book**
+- URL: /books/delete/{id}
+- Method: PUT
+- Description: Deletes a book in the library.
+- Request Body:
+   ```bash
+   {
+"id": "8",
+"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAzNzcsImV4cCI6MTczMDk2Mzk3N30.NH9OXj3KBStsJtUh_89Cja8-2yHhFHucq0hFUs7TEtM"
+}
+- Response:
+   ```bash
+   {
+  "status": "success",
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjA1MDIsImV4cCI6MTczMDk2NDEwMn0.xUz1CPHIyTg8Ju6lITKAmEyBvyPSQEs6U_ltMhL9E-s",
+  "message": "Book deleted successfully"
+}
+
+
+
 
 
 
