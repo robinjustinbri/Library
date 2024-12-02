@@ -283,13 +283,14 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
 Tokens are generated using the **HS256** algorithm and are valid for **1 hour**. The generateAccessToken() function creates the payload and signs it with a secret key.
 
 **Token Payload Structure**
-```bash
-{
-  "iss": "http://library.org",
-  "aud": "http://library.com",
-  "iat": "<issued_at_timestamp>",
-  "exp": "<expiration_timestamp>"
-}
+  ```bash
+  {
+    "iss": "http://library.org",
+    "aud": "http://library.com",
+    "iat": "<issued_at_timestamp>",
+    "exp": "<expiration_timestamp>"
+  }
+
 
 **Token Validation**
 The API validates incoming tokens using a middleware function (validateToken). Tokens are checked for expiration and usage status.
