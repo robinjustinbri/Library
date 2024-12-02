@@ -42,7 +42,7 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
 
 ### User Endpoints
 **1. Register a New User**
-- URL: /user/register
+- **URL: /user/register**
 - Method: POST
 - Description: Registers a new user with username and password
 - Request Body:
