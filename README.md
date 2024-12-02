@@ -302,7 +302,7 @@ The following tables define the database schema for the Library API.
 
 ---
 
-## Users Table
+### Users Table
 
 | Column     | Data Type    | Constraints                | Description             |
 |------------|--------------|----------------------------|-------------------------|
@@ -312,7 +312,7 @@ The following tables define the database schema for the Library API.
 
 ---
 
-## Authors Table
+### Authors Table
 
 | Column      | Data Type    | Constraints                | Description             |
 |-------------|--------------|----------------------------|-------------------------|
@@ -321,7 +321,7 @@ The following tables define the database schema for the Library API.
 
 ---
 
-## Books Table
+### Books Table
 
 | Column      | Data Type    | Constraints                | Description             |
 |-------------|--------------|----------------------------|-------------------------|
@@ -331,7 +331,7 @@ The following tables define the database schema for the Library API.
 
 ---
 
-## JWT Tokens Table
+### JWT Tokens Table
 
 | Column       | Data Type    | Constraints                | Description               |
 |--------------|--------------|----------------------------|---------------------------|
@@ -341,7 +341,7 @@ The following tables define the database schema for the Library API.
 
 ---
 
-## Relationships
+### Relationships
 
 - **Users** table stores authentication details for each user.
 - **Authors** table maintains information about authors available in the library.
