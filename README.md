@@ -247,10 +247,10 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
 - **Request Body**:
    ```bash
    {
-"id": "8",
-  "title": "Brave",
-"author_id": "7",
-"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAyNDUsImV4cCI6MTczMDk2Mzg0NX0.phQVjYcAIJDDTieLlklxxApPZxrZEzo7W5A4zUDcg4Y"
+   "id": "8",
+   "title": "Brave",
+   "author_id": "7",
+   "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAyNDUsImV4cCI6MTczMDk2Mzg0NX0.phQVjYcAIJDDTieLlklxxApPZxrZEzo7W5A4zUDcg4Y"
 }
 - **Response**:
    ```bash
@@ -267,8 +267,8 @@ The **Library API** is a RESTful service built with PHP and the Slim framework. 
 - **Request Body**:
    ```bash
    {
-"id": "8",
-"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAzNzcsImV4cCI6MTczMDk2Mzk3N30.NH9OXj3KBStsJtUh_89Cja8-2yHhFHucq0hFUs7TEtM"
+   "id": "8",
+   "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NjAzNzcsImV4cCI6MTczMDk2Mzk3N30.NH9OXj3KBStsJtUh_89Cja8-2yHhFHucq0hFUs7TEtM"
    }
 - **Response**:
    ```bash
